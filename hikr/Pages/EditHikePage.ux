@@ -1,4 +1,5 @@
 <Page ux:Class="EditHikePage">
+    <Router ux:Dependency="router" />
     <JavaScript File="EditHikePage.js" />
     <ScrollView>
         <StackPanel>
@@ -18,6 +19,7 @@
 
             <Text>Comments:</Text>
             <TextView Value="{comments}" TextWrapping="Wrap" />
+            <Button Text="Back" Clicked="{goBack}" />
         </StackPanel>
     </ScrollView>
 </Page>

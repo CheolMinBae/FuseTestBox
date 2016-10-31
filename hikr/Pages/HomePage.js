@@ -1,10 +1,11 @@
 var hikes = require('hikes');
 
-function chooseHike () {
-    //TODO
+function goToHike (args) {
+    var hike = args.data;
+    router.push('editHike', hike);
 }
 
 module.exports = {
     hikes: hikes,
-    chooseHike: chooseHike
+    goToHike: goToHike
 }
