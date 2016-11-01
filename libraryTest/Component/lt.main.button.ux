@@ -1,0 +1,6 @@
+<Panel ux:Class="lt.main.button">
+    <float ux:Property="FontSize" />
+    <string ux:Property="Text" />
+
+    <Text FontSize="{Property FontSize}" Margin="20" Value="{Property Text}" TextAlignment="Center" />
+</Panel>

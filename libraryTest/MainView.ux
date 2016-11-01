@@ -1,0 +1,8 @@
+<App>
+    <Router ux:Name="router" />
+    <ClientPanel>
+        <Navigator DefaultTemplate="home">
+            <Home ux:Template="home" router="router" />
+        </Navigator>
+    </ClientPanel>
+</App>

@@ -1,0 +1,17 @@
+ <Page ux:Class="Home">
+    <Router ux:Dependency="router" />
+    <DockPanel>
+        <Text FontSize="40" Dock="Top" Margin="0,50">Fuse Module Text</Text>
+        <ScrollView>
+            <Rectangle ux:Class="Seperator" Height="1" Fill="#ffff"></Rectangle>
+            <StackPanel>
+                <Seperator />
+                <lt.main.button FontSize="20" Text="Sqlite" />
+                <Seperator />
+                <lt.main.button FontSize="20" Text="Qreader" />
+                <Seperator />
+                <lt.main.button FontSize="20" Text="Push" />
+            </StackPanel>
+        </ScrollView>
+    </DockPanel>
+</Page>
