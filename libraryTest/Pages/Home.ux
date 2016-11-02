@@ -1,16 +1,35 @@
  <Page ux:Class="Home">
     <Router ux:Dependency="router" />
+    <JavaScript>
+        function goToSqlite() {
+            router.push('sqlite');
+        }
+
+        function goToQreader() {
+            router.push('qreader');
+        }
+
+        function goToPush() {
+            router.push('push');
+        }
+
+        module.exports = {
+            goToSqlite: goToSqlite,
+            goToQreader: goToQreader,
+            goToPush: goToPush
+        };
+    </JavaScript>
     <DockPanel>
         <Text FontSize="40" Dock="Top" Margin="0,50">Fuse Module Text</Text>
         <ScrollView>
             <Rectangle ux:Class="Seperator" Height="1" Fill="#ffff"></Rectangle>
             <StackPanel>
                 <Seperator />
-                <lt.main.button FontSize="20" Text="Sqlite" />
+                <lt.main.button FontSize="20" Text="Sqlite" Clicked="{goToSqlite}" />
                 <Seperator />
-                <lt.main.button FontSize="20" Text="Qreader" />
+                <lt.main.button FontSize="20" Text="Qreader" Clicked="{goToQreader}" />
                 <Seperator />
-                <lt.main.button FontSize="20" Text="Push" />
+                <lt.main.button FontSize="20" Text="Push" Clicked="{goToPush}" />
             </StackPanel>
         </ScrollView>
     </DockPanel>

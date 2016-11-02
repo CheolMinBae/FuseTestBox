@@ -5,7 +5,11 @@
     "FuseJS"
   ],
   "Includes": [
-    "*"
+    "*",
+    "*.uno",
+    "*.uxl",
+    "*.ux",
+    "bundle.sqlite:Bundle"
   ],
   "Projects": [
     "fuse_modules/bolav/fuse-sqlite/sqlite_include.unoproj"

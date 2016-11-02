@@ -1,0 +1,3 @@
+<Page ux:Class="Qreader">
+    <Router ux:Dependency="router" />
+</Page>

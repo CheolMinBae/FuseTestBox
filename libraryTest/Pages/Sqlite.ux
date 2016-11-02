@@ -1,0 +1,22 @@
+<Page ux:Class="Sqlite">
+    <Router ux:Dependency="router" />
+    <JavaScript File="Sqlite.js" />
+    <StackPanel>
+        <Panel>
+            <Button Text="저장" Clicked="{insertData}"/>
+        </Panel>
+        <Panel>
+            <Button Text="호출" Clicked="{loadData}" />
+        </Panel>
+        <StackPanel>
+            <Text FontSize="30" Margin="20">결과</Text>
+            <Rectangle ux:Class="Separator" Height="1" Fill="#000" />
+            <Each Items="{dbData}">
+                <Separator />
+                <Panel>
+                    <Text Value="{id}" FontSize="20" Margin="20" />
+                </Panel>
+            </Each>
+        </StackPanel>
+    </StackPanel>
+</Page> 

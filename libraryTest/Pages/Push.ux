@@ -1,0 +1,3 @@
+<Page ux:Class="Push">
+    <Router ux:Dependency="router" />
+</Page>

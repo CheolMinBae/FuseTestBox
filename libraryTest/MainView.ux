@@ -1,8 +1,12 @@
 <App>
     <Router ux:Name="router" />
+    <SQLite ux:Global="SQLite" />
     <ClientPanel>
         <Navigator DefaultTemplate="home">
             <Home ux:Template="home" router="router" />
+            <Sqlite ux:Template="sqlite" router="router" />
+            <Qreader ux:Template="qreader" router="router" />
+            <Push ux:Template="push" router="router" />
         </Navigator>
     </ClientPanel>
 </App>
